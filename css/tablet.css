@@ -37,9 +37,8 @@ header {
   align-items: center;
   padding: 40px 0;
 }
-header a {
+header nav a {
   text-decoration: none;
-  color: #7c6a0a;
 }
 header nav .nav--mob {
   display: flex;
@@ -85,4 +84,27 @@ main article .article_text h1 {
 }
 main article .article_text p {
   margin-bottom: 28px;
-}/*# sourceMappingURL=mobile.css.map */
+}
+
+header nav .nav--mob {
+  display: none;
+}
+header nav .nav--desk {
+  display: flex;
+  gap: 28px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+main article {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+  text-align: left;
+  align-items: center;
+}
+main article figure {
+  min-width: 400px;
+}/*# sourceMappingURL=tablet.css.map */

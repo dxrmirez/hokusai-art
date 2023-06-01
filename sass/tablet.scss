@@ -1,0 +1,31 @@
+@use 'mobile';
+
+header {
+    nav {
+        .nav--mob {
+            display: none;
+        }
+
+        .nav--desk {
+            display: flex;
+            gap: 28px;
+        }
+    }
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+
+    article {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 12px;
+        text-align: left;
+        align-items: center;
+
+        figure {
+            min-width: 400px;
+        }
+    }
+}
