@@ -24,6 +24,9 @@ html h1 {
 html p {
   font-size: 1.5rem;
 }
+html ul {
+  list-style: none;
+}
 html .primary-button {
   background-color: #e86424;
   color: white;
@@ -144,4 +147,31 @@ main .main_kidoutai-carret article figure {
 }
 main .main_kidoutai-carret article figure img {
   width: 100%;
+}
+
+footer {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #7c6a0a;
+}
+footer button {
+  background-color: none;
+  border: 0;
+  cursor: pointer;
+}
+footer button svg {
+  width: 40px;
+  height: 40px;
+  fill: #7c6a0a;
 }/*# sourceMappingURL=mobile.css.map */

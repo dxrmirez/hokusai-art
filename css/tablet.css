@@ -24,6 +24,9 @@ html h1 {
 html p {
   font-size: 1.5rem;
 }
+html ul {
+  list-style: none;
+}
 html .primary-button {
   background-color: #e86424;
   color: white;
@@ -100,6 +103,8 @@ main .main_bio-text p {
 main .main_grisaria {
   box-sizing: content-box;
   padding: 0 8% 40px 8%;
+  background-color: #ffefe7;
+  color: #7c6a0a;
 }
 main .main_grisaria h2 {
   box-sizing: content-box;
@@ -123,7 +128,7 @@ main .main_kidoutai {
   box-sizing: content-box;
   padding: 0 8% 40px 8%;
   background-color: #7c6a0a;
-  color: white;
+  color: #ffefe7;
 }
 main .main_kidoutai h2 {
   box-sizing: content-box;
@@ -142,6 +147,33 @@ main .main_kidoutai-carret article figure {
 }
 main .main_kidoutai-carret article figure img {
   width: 100%;
+}
+
+footer {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #7c6a0a;
+}
+footer button {
+  background-color: none;
+  border: 0;
+  cursor: pointer;
+}
+footer button svg {
+  width: 40px;
+  height: 40px;
+  fill: #7c6a0a;
 }
 
 header nav .nav--mob {
@@ -166,6 +198,9 @@ main .main_bio {
 main .main_bio figure {
   height: auto;
 }
+main .main_kidoutai {
+  border-radius: 20px;
+}
 main .main_kidoutai-carret article figure,
 main .main_grisaria-carret article figure {
   width: 300px;
@@ -178,4 +213,19 @@ main .main_grisaria-carret article h3 {
 main .main_kidoutai-carret article p,
 main .main_grisaria-carret article p {
   font-size: 2rem;
+}
+
+footer {
+  margin: 40px 0;
+}
+footer ul {
+  flex-direction: row;
+  gap: 40px;
+}
+footer ul a {
+  font-size: 1.5rem;
+}
+footer button svg {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=tablet.css.map */

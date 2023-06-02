@@ -40,6 +40,10 @@ html {
         font-size: $sm;
     }
 
+    ul {
+        list-style: none;
+    }
+
     .primary-button {
         background-color: $hard-orange;
         color: white;
@@ -167,5 +171,34 @@ main {
 
     .main_kidoutai {
         @include collection($text-color, $primary-color);
+    }
+}
+
+footer {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: $text-color;
+        }
+    }
+    button{
+        background-color: none;
+        border: 0;
+        cursor: pointer;
+        svg{
+            width: 40px;
+            height: 40px;
+            fill: $text-color;
+        }
     }
 }
