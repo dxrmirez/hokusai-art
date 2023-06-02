@@ -1,31 +1,51 @@
-@use 'mobile';
+@import "mobile";
 
 header {
-    nav {
-        .nav--mob {
-            display: none;
-        }
-
-        .nav--desk {
-            display: flex;
-            gap: 28px;
-        }
+  nav {
+    .nav--mob {
+      display: none;
     }
+
+    .nav--desk {
+      display: flex;
+      gap: 28px;
+    }
+  }
 }
 
 main {
-    max-width: 900px;
-    margin: auto;
+  max-width: 900px;
+  margin: auto;
 
-    article {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 12px;
-        text-align: left;
-        align-items: center;
+  .main_bio {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
+    text-align: left;
+    align-items: center;
 
-        figure {
-            min-width: 400px;
-        }
+    figure {
+      height: auto;
     }
+  }
+
+  .main_kidoutai,
+  .main_grisaria {
+    &-carret {
+      article {
+        figure {
+          width: 300px;
+          height: 220px;
+        }
+
+        h3 {
+          font-size: $sm;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }

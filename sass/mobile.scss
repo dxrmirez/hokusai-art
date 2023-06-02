@@ -24,12 +24,16 @@ html {
         background-color: $primary-color;
         color: $text-color;
         min-width: 320px;
-        padding: 0 8%;
+    }
+
+    h2 {
+        font-size: $md;
+        font-weight: 400;
     }
 
     h1 {
-        font-size: $md;
-        font-weight: 400;
+        font-weight: 700;
+        font-size: $lg;
     }
 
     p {
@@ -39,11 +43,21 @@ html {
     .primary-button {
         background-color: $hard-orange;
         color: white;
-        box-sizing: content-box;
-        padding: 12px 40px;
         border-radius: 20px;
         font-size: $sm;
         text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+    }
+
+    ::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(186, 189, 141, 0.5);
+        border-radius: 5px;
     }
 }
 
@@ -51,7 +65,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 8%;
 
     a {
         text-decoration: none;
@@ -86,11 +100,13 @@ header {
 }
 
 main {
-    article {
+    .main_bio {
+        padding: 0 8%;
         text-align: center;
 
         figure {
-            height: 400px;
+            height: 300px;
+            max-width: 400px;
             border-radius: 40px;
             overflow: hidden;
 
@@ -101,18 +117,55 @@ main {
             }
         }
 
-        .article_text {
+        &-text {
             text-align: left;
 
             h1 {
-                font-weight: 700;
-                font-size: $lg;
                 margin: 16px 0;
             }
 
             p {
-                margin-bottom: 28px;
+                margin: 16px 0;
             }
         }
+    }
+
+    @mixin collection($bck, $text) {
+        box-sizing: content-box;
+        padding: 0 8% 40px 8%;
+        background-color: $bck;
+        color: $text;
+
+        h2 {
+            box-sizing: content-box;
+            padding: 40px 0;
+        }
+
+        &-carret {
+            display: flex;
+            gap: 20px;
+            overflow: auto;
+
+            article {
+                figure {
+                    width: 200px;
+                    height: 140px;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_grisaria {
+        @include collection($primary-color, $text-color);
+    }
+
+    .main_kidoutai {
+        @include collection($text-color, $primary-color);
     }
 }
