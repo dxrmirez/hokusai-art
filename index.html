@@ -1,187 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio — Hokusai Art</title>
-    <link rel="shorcut icon" href="assets/katsushika-hokusai/signature.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 700px)">
+    <title>Google</title>
+    <link rel="shortcut icon" href="resources/g-logo.png" type="image/png">
+    <link rel="stylesheet" href="google-clone.css">
 </head>
 
 <body>
     <header>
-        <h2><a href="">Hokusai Art</a></h2>
         <nav>
-            <div class="nav--mob">
-                <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-
-                </button>
-            </div>
-            <div class="nav--desk">
-                <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M5.121 17.804C7.21942 16.6179 9.58958 15.9963 12 16C14.5 16 16.847 16.655 18.879 17.804M15 10C15 10.7956 14.6839 11.5587 14.1213 12.1213C13.5587 12.6839 12.7956 13 12 13C11.2044 13 10.4413 12.6839 9.87868 12.1213C9.31607 11.5587 9 10.7956 9 10C9 9.20435 9.31607 8.44129 9.87868 7.87868C10.4413 7.31607 11.2044 7 12 7C12.7956 7 13.5587 7.31607 14.1213 7.87868C14.6839 8.44129 15 9.20435 15 10ZM21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
-                            stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></button>
-                <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z"
-                            stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></button>
-                <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M3 3H5L5.4 5M5.4 5H21L17 13H7M5.4 5L7 13M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C16.4696 17 15.9609 17.2107 15.5858 17.5858C15.2107 17.9609 15 18.4696 15 19C15 19.5304 15.2107 20.0391 15.5858 20.4142C15.9609 20.7893 16.4696 21 17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19C19 18.4696 18.7893 17.9609 18.4142 17.5858C18.0391 17.2107 17.5304 17 17 17ZM9 19C9 19.5304 8.78929 20.0391 8.41421 20.4142C8.03914 20.7893 7.53043 21 7 21C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19C5 18.4696 5.21071 17.9609 5.58579 17.5858C5.96086 17.2107 6.46957 17 7 17C7.53043 17 8.03914 17.2107 8.41421 17.5858C8.78929 17.9609 9 18.4696 9 19Z"
-                            stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></button>
-            </div>
+            <ul>
+                <li>
+                    <a href="" class="text link-text">Gmail</a>
+                </li>
+                <li>
+                    <a href="" class="text link-text">Images</a>
+                </li>
+                <li><img class="icon" src="resources/more-apps.png" alt="apps"></li>
+                <li><img class="logo" src="resources/profile.jpg" alt="profile"></li>
+            </ul>
         </nav>
     </header>
-</body>
-<main>
-    <article class="main_bio">
-        <figure>
-            <img src="assets/katsushika-hokusai/the-top-of-mount-fuji-1800.jpg" alt="the-top-of-mount-fuji-1800">
-        </figure>
-        <div>
-            <div class="main_bio-text">
-                <h1>Katsushika Hokusai</h1>
-                <p>En efecto, si hay un trabajo que hizo el nombre de Hokusai famoso, tanto en Japón como en el
-                    extranjero,
-                    debe ser esta serie de impresiones monumental <em>(...)</em></p>
+    <main>
+        <section class="google-search">
+            <h1 class="isotipo">Google</h1>
+            <div class="prompt">
+                <img src="../garden-shop/icons/lens.svg" alt="search">
+                <input type="text" class="search">
+                <figure class="app-g">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+                        alt="mic">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Lens_-_new_logo.png/800px-Google_Lens_-_new_logo.png"
+                        alt="qr">
+                </figure>
             </div>
-            <a href="" class="primary-button">Conoce más</a>
+            <div class="go-search">
+                <button class="go-buttons">Google Search</button>
+                <button class="go-buttons">I'm Feeling Lucky</button>
+            </div>
+            <p class="hint">Google offered in: <a href="#"> Español (Latinoamérica)</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="foo foo-b1">
+            <p>Colombia</p>
         </div>
-    </article>
-    <section class="main_grisaria">
-        <h2>Grisaria Collection</h2>
-        <div class="main_grisaria-carret">
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/ariwara-no-narihira-1839.jpg" alt="ariwara-no-narihira-1839">
-                </figure>
-                <h3>Ariwara no Narihira</h3>
-                <p>1839</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/floweing-cherry-trees-1809.jpg"
-                        alt="floweing-cherry-trees-1809">
-                </figure>
-                <h3>Floweing Cherry Trees</h3>
-                <p>1809</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/fujiwara-no-michinobu-1839.jpg"
-                        alt="fujiwara-no-michinobu-1839">
-                </figure>
-                <h3>Fujiwara no Michinobu</h3>
-                <p>1839</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/the-top-of-mount-fuji-1800.jpg"
-                        alt="the-top-of-mount-fuji-1800">
-                </figure>
-                <h3>The Top of Mount Fuji</h3>
-                <p>1800</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/kakinomoto-hitomaro-1802.jpg" alt="kakinomoto-hitomaro-1802">
-                </figure>
-                <h3>Kakinomoto Hitomaro</h3>
-                <p>1802</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/nakahara-in-sagami-1832.jpg" alt="nakahara-in-sagami-1832">
-                </figure>
-                <h3>Nakahara in Sagami</h3>
-                <p>1832</p>
-            </article>
+        <div class="foo foo-b2">
+            <nav class="bar">
+                <ul class="foo-ul">
+                    <li class="foo-li">
+                        <p><a href="">About</a></p>
+                    </li>
+                    <li class="foo-li">
+                        <p><a href="">Advertising</a></p>
+                    </li>
+                    <li class="foo-li">
+                        <p><a href="">Business</a></p>
+                    </li>
+                    <li class="foo-li">
+                        <p><a href="">How Search works</a></p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="bar">
+                <ul class="foo-ul">
+                    <li class="foo-li">
+                        <p><a href="">Privacy</a></p>
+                    </li>
+                    <li class="foo-li">
+                        <p><a href="">Terms</a></p>
+                    </li>
+                    <li class="foo-li">
+                        <p><a href="">Settings</a></p>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section class="main_kidoutai">
-        <h2>Kidoutai Collection</h2>
-        <div class="main_kidoutai-carret">
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/onakatomi-no-ason-1833.jpg" alt="onakatomi-no-ason-1833">
-                </figure>
-                <h3>Onakatomi no Ason</h3>
-                <p>1833</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/poem-ise-1839.jpg" alt="poem-ise-1839">
-                </figure>
-                <h3>Poem Ise</h3>
-                <p>1839</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/reflection-misaka-1831.jpg">
-                </figure>
-                <h3>Reflection Misaka</h3>
-                <p>1831</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/sanjo-series-1802.jpg" alt="sanjo-series-1802">
-                </figure>
-                <h3>Sanjo Series</h3>
-                <p>1802</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/shower-at-the-new-yanagi-bridge-1806.jpg"
-                        alt="shower-at-the-new-yanagi-bridge-1806">
-                </figure>
-                <h3>Shower at the New Yanagi Bridge</h3>
-                <p>1806</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/katsushika-hokusai/the-sacred-spring-1832.jpg" alt="the-sacred-spring-1832">
-                </figure>
-                <h3>The Sacred Spring</h3>
-                <p>1832</p>
-            </article>
-        </div>
-    </section>
-</main>
-<footer>
-    <div>
-        <ul>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="">Idioma</a></li>
-            <li><a href="">Ayuda</a></li>
-        </ul>
-    </div>
-    <button>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-            <g>
-                <path d="M5.8,15.6c0-1.5-0.5-2.8-1.6-3.9s-2.4-1.6-3.9-1.6V4.5c3.1,0,5.7,1.1,7.8,3.2C8.3,7.9,8.4,8,8.6,8.2C8.7,8.1,8.8,7.9,9,7.8
-		c2.2-2.2,4.8-3.2,7.8-3.2v5.5c-1.5,0-2.8,0.5-3.9,1.6s-1.6,2.4-1.6,3.9s0.5,2.8,1.6,3.9s2.4,1.6,3.9,1.6v5.5
-		c-3.1,0-5.7-1.1-7.8-3.2c-0.2-0.2-0.3-0.3-0.5-0.5c-0.1,0.2-0.3,0.3-0.5,0.5c-2.2,2.2-4.8,3.2-7.8,3.2v-5.5c1.5,0,2.8-0.5,3.9-1.6
-		C5.2,18.5,5.8,17.1,5.8,15.6z" />
-                <path d="M24.4,18.8h-7.9v-5.5h7.9c0.4,0,0.8-0.2,1.1-0.5c0.3-0.3,0.5-0.7,0.5-1.1s-0.2-0.8-0.5-1.1s-0.7-0.5-1.1-0.5h-7.9V4.6h8.7
-		c1.8,0,3.2,0.7,4.5,2.1c1.2,1.4,1.9,3.1,1.9,5c0,1.6-0.4,3.1-1.3,4.3c0.9,1.3,1.3,2.7,1.3,4.4v6.3h-5.5v-6.3c0-0.4-0.2-0.8-0.5-1.1
-		C25.4,18.9,25,18.8,24.6,18.8z" />
-            </g>
-        </svg>
-    </button>
-</footer>
+    </footer>
+</body>
 
 </html>
